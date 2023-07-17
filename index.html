@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">Age calculator</h1>
+      <div class="wrapper">
+        <form class="input">
+          <div class="day">
+            <label for="day" class="day-label">Day</label>
+            <input
+              type="text"
+              name="Day"
+              id="day-input"
+              placeholder="DD"
+              autocomplete="off"
+              maxlength="2"
+            />
+            <span class="error-text" id="day-error-text"></span>
+          </div>
+          <div class="month">
+            <label for="day" class="month-label">Month</label>
+            <input
+              type="text"
+              pattern="\d*"
+              name="Month"
+              id="month-input"
+              placeholder="MM"
+              autocomplete="off"
+              maxlength="2"
+            />
+            <span class="error-text" id="month-error-text"></span>
+          </div>
+          <div class="year">
+            <label for="day" class="year-label">Year</label>
+            <input
+              type="text"
+              name="day"
+              id="year-input"
+              placeholder="YYYY"
+              autocomplete="off"
+              maxlength="4"
+            />
+            <span class="error-text" id="year-error-text"></span>
+          </div>
+          <span class="error-text all-error"></span>
+        </form>
+        <div class="btn">
+          <span class="line"></span>
+          <button id="check-button">
+            <img src="assets/images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="result">
+          <p><span class="year-result">--</span>years</p>
+          <p><span class="month-result">--</span>months</p>
+          <p><span class="day-result">--</span>days</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="index.js"></script>
+  </body>
+</html>
